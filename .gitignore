@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+reports/*.xml
+reports/*.json
+reports/screenshots/
+reports/videos/
+reports/*trace.zip
+allure-results/
+.DS_Store

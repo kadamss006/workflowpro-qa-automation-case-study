@@ -1,0 +1,26 @@
+{
+  "company1": {
+    "admin": {
+      "email_env": "COMPANY1_ADMIN_EMAIL",
+      "password_env": "COMPANY1_ADMIN_PASSWORD",
+      "requires_2fa": true
+    },
+    "manager": {
+      "email": "manager@company1.test",
+      "password_env": "COMPANY1_MANAGER_PASSWORD",
+      "requires_2fa": false
+    },
+    "employee": {
+      "email": "employee@company1.test",
+      "password_env": "COMPANY1_EMPLOYEE_PASSWORD",
+      "requires_2fa": false
+    }
+  },
+  "company2": {
+    "employee": {
+      "email_env": "COMPANY2_USER_EMAIL",
+      "password_env": "COMPANY2_USER_PASSWORD",
+      "requires_2fa": false
+    }
+  }
+}

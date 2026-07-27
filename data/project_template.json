@@ -1,0 +1,5 @@
+{
+  "name": "QA Project {{unique_suffix}}",
+  "description": "Created by automated API + UI integration test",
+  "team_members": []
+}

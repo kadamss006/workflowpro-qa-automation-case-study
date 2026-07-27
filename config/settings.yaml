@@ -1,0 +1,43 @@
+defaults:
+  navigation_timeout_ms: 30000
+  assertion_timeout_ms: 15000
+  api_timeout_seconds: 20
+  retries:
+    network: 2
+    ci_test_retry: 1
+  artifacts:
+    screenshot: only-on-failure
+    trace: retain-on-failure
+    video: retain-on-failure
+
+environments:
+  local:
+    base_domain: localhost:3000
+    api_base_url: http://localhost:8000
+    secure: false
+  staging:
+    base_domain: staging.workflowpro.test
+    api_base_url: https://api.staging.workflowpro.test
+    secure: true
+  production:
+    base_domain: workflowpro.com
+    api_base_url: https://api.workflowpro.com
+    secure: true
+
+browser_matrix:
+  pull_request:
+    - chromium
+  nightly:
+    - chromium
+    - firefox
+    - webkit
+
+browserstack_mobile_matrix:
+  - name: Android Chrome
+    os: android
+    device: Samsung Galaxy S23
+    browser: chrome
+  - name: iOS Safari
+    os: ios
+    device: iPhone 15
+    browser: safari
